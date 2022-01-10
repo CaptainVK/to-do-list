@@ -8,19 +8,34 @@
     <title>To do list</title>
 </head>
 <body>
-    <div class="container" id="main">
-        <h1>To do list</h1>
-        <form id = "todoForm">
-            <input type = "text " 
-                   id="todoInput"
-                   placeholder = " Write your planes">
+    <div class="wraper">
 
-            <button id="btn" type="button" onclick ="todolist()"> Add task </button>
+    <header>
+        <h1> to do list </h1>
+        <form id="new-task">
+            <input type = "text"
+                   id = "nt-input"
+                   placeholder = " eneter your plans , please">
+            <input type="submit"
+                   class= " btn";
+                   id = "btn"
+                   value = "Add task ">
         </form>
-        <ol id = "todoList">
-        </ol>
-    </div>
-    
+    </header>
+    <main>
+           <section class="task">
+               <h1> 2022 Tasks </h1> 
+               <div id="tasks" >
+               </div>
+              
+           </section> 
+    </main>
+
+
+</div>
+
+
     <script src="/main.js"></script>
-</body>
+ </body> 
+
 </html>
